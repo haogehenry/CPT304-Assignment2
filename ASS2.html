@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPT304 Assignment2</title>
+    <style>
+        .box{
+            width:600px;
+            height:1200px;
+            margin: auto;
+            top:0;
+            left: 0;
+            right:0;
+        }
+    </style>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+<script src="getHoliday.js"></script>
+<script src="getHotel.js"></script>
+<script src="getWeather.js"></script>
+<body class="box">
+    <div class="header">
+    <font size="5.5">
+        <h1>CPT304 Assignment2</h1>
+    </font>
+    </div>
+
+<!--year    -->
+    <div>
+        Please enter the year(eg.2020, 2023)<input type="text" value="" id="year">.
+    </div>
+
+<!--country-->
+    </div>
+        <br>
+        Please enter a country code(eg. CN, US)<input type="text" value="" id="Countrycode">
+        <br>
+        <button type="button" onclick="getholiday()">get holiday list</button>
+    </div>
+
+<!--city-->
+    <div>
+        <br>
+        Please enter a city(eg.Beijing, London)<input type="text" value="" id="city">
+        <br>
+        <button type="button" onclick="getHotel()">get hotel list</button>
+    </div>
+
+<!--weather-->
+    <div>
+        <br>
+        <button type="button" onclick="getweather()">get weather</button>
+    </div>
+
+    <pre id="holidaylist"></pre>
+    <pre id="hotellist"></pre>
+    <pre id="weatherlist"></pre>
+</body>
+</html>
